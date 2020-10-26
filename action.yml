@@ -1,0 +1,6 @@
+name: 'Update PR Merge Action'
+description: 'This action supports auto-merging automatically generated PRs to update parent POM references'
+author: 'Sebastian Krach'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

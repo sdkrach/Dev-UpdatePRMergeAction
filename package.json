@@ -1,0 +1,45 @@
+{
+  "name": "update-pr-merge-action",
+  "version": "0.1.0",
+  "description": "Update PR Merge Action",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "package": "ncc build --source-map --license licenses.txt",
+    "test": "jest",
+    "all": "npm run build && npm run format && npm run lint && npm run package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdkrach/Dev-UpdatePRMergeAction.git"
+  },
+  "author": "Sebastian Krach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdkrach/Dev-UpdatePRMergeAction/issues"
+  },
+  "homepage": "https://github.com/sdkrach/Dev-UpdatePRMergeAction#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.10.0",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "@vercel/ncc": "^0.24.1",
+    "eslint": "^7.10.0",
+    "eslint-plugin-github": "^4.1.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "jest": "^26.4.2",
+    "jest-circus": "^26.4.2",
+    "js-yaml": "^3.14.0",
+    "prettier": "2.1.2",
+    "ts-jest": "^26.4.0",
+    "typescript": "^4.0.3"
+  }
+}
